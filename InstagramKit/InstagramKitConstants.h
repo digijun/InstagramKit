@@ -78,12 +78,16 @@ typedef NS_OPTIONS(NSUInteger, InstagramKitLoginScope)
 {
     /*! Indicates permission to read data on a user’s behalf, e.g. recent media, following lists (granted by default) */
     InstagramKitLoginScopeBasic = 0,
+    /*! Indicates permission to read any public profile info and media on a user’s behalf */
+    InstagramKitLoginScopePublicContent = 1<<1,
+    /*! Indicates permission to read the list of followers and followed-by users */
+    InstagramKitLoginScopeFollowerList = 1<<2,
     /*! Indicates permission to create or delete comments on a user’s behalf */
-    InstagramKitLoginScopeComments = 1<<1,
+    InstagramKitLoginScopeComments = 1<<3,
     /*! Indicates permission to follow and unfollow accounts on a user’s behalf */
-    InstagramKitLoginScopeRelationships = 1<<2,
+    InstagramKitLoginScopeRelationships = 1<<4,
     /*! Indicates permission to like and unlike media on a user’s behalf */
-    InstagramKitLoginScopeLikes = 1<<3
+    InstagramKitLoginScopeLikes = 1<<5
 };
 
 

@@ -185,7 +185,7 @@
 
 - (NSString *)stringForScope:(InstagramKitLoginScope)scope
 {
-    NSArray *typeStrings = @[@"basic", @"comments", @"relationships", @"likes"];
+    NSArray *typeStrings = @[@"basic", @"public_content", @"follower_list", @"comments", @"relationships", @"likes"];
     
     NSMutableArray *strings = [NSMutableArray arrayWithCapacity:typeStrings.count];
     [typeStrings enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
